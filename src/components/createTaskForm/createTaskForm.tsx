@@ -9,7 +9,7 @@ import { Priority } from "./enums/Priority";
 import { useMutation } from "@tanstack/react-query";
 import { sendApiRequest } from "../../helpers/sendApiRequest";
 import { ICreateTask } from "../taskArea/interfaces/ICreateTask";
-import { TaskStatusChangedContext } from "../../context/TaskStatusChangedContext/TaskStatusChangedContext";
+import { TaskStatusChangedContext } from "../../context";
 
 export const CreateTaskForm: FC = (): ReactElement => {
     const [title, setTitle] = useState<string | undefined>(undefined);
